@@ -192,91 +192,93 @@
 	</div>
 	<!-- 网站新闻结束···················································· -->
 	<!-- 钢琴展示························································ -->
-	<div class="index-pinao-show-warp section section3 " style="background:url(../images/piano_bg.png) center no-repeat;background-size: cover;">
-		<div class="index-pinao-show clearfix">
-			<div class="index-pinao-show-fullfpage f-l-l">
+	<!--<div class="index-pinao-show-warp section section3 " style="background:url(../images/piano_bg.png) center no-repeat;background-size: cover;">-->
+		<!--<div class="index-pinao-show clearfix">-->
+			<!--<div class="index-pinao-show-fullfpage f-l-l">-->
 
-				[e:loop={"select * from phome_ecms_photo where classid in(16,17) and isgood=1 order by id desc limit 1",10,24,0}]
-				<a class="f-l-l piano-bg-warp clearfix" href="<?=$bqr[titleurl]?>">
-					<img  src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>">
-				</a>
-				<div class="index-pinao-price f-l-l">
-					<h2><?=$bqr[brand]?></h2>
-					<h3><?=$bqr[title]?></h3>
-					<div class="index-pinao-price-msg"><?=$bqr[futitle]?><br>厂家直销，质量保证</div>
-					<h4>售价：￥<?=$bqr[money]?></h4>
-					<a href="<?=$bqr[titleurl]?>">立即购买</a>
-				</div>
-				[/e:loop]
+				<!--[e:loop={"select * from phome_ecms_photo where classid in(16,17) and isgood=1 order by id desc limit 1",10,24,0}]-->
+				<!--<a class="f-l-l piano-bg-warp clearfix" href="<?=$bqr[titleurl]?>">-->
+					<!--<img  src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>">-->
+				<!--</a>-->
+				<!--<div class="index-pinao-price f-l-l">-->
+					<!--<h2><?=$bqr[brand]?></h2>-->
+					<!--<h3><?=$bqr[title]?></h3>-->
+					<!--<div class="index-pinao-price-msg"><?=$bqr[futitle]?><br>厂家直销，质量保证</div>-->
+					<!--<h4>售价：￥<?=$bqr[money]?></h4>-->
+					<!--<a href="<?=$bqr[titleurl]?>">立即购买</a>-->
+				<!--</div>-->
+				<!--[/e:loop]-->
 
-			</div>
-			<div class="index-pinao-show-halfpage-warp f-l-l">
-				[e:loop={"select * from phome_ecms_photo where classid in(16,17) and isgood=2 order by id desc limit 2",10,24,0}]
-				<div class="index-pinao-show-halfpage halfpage1  f-l-l">
-					<a href="<?=$bqr[titleurl]?>"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></a>
-				</div>
-				[/e:loop]
-				<!--<div class="index-pinao-show-halfpage halfpage2  f-l-l">
-					<a href=""><img src="../images/pinao_lit1.png" alt=""></a>
-				</div>-->
-			</div>
+			<!--</div>-->
+			<!--<div class="index-pinao-show-halfpage-warp f-l-l">-->
+				<!--[e:loop={"select * from phome_ecms_photo where classid in(16,17) and isgood=2 order by id desc limit 2",10,24,0}]-->
+				<!--<div class="index-pinao-show-halfpage halfpage1  f-l-l">-->
+					<!--<a href="<?=$bqr[titleurl]?>"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></a>-->
+				<!--</div>-->
+				<!--[/e:loop]-->
+				<!--&lt;!&ndash;<div class="index-pinao-show-halfpage halfpage2  f-l-l">-->
+					<!--<a href=""><img src="../images/pinao_lit1.png" alt=""></a>-->
+				<!--</div>&ndash;&gt;-->
+			<!--</div>-->
 
-		</div>
-	</div>
+		<!--</div>-->
+	<!--</div>-->
 	<!-- 钢琴展示结束····················································· -->
 
 	<!-- 提琴展示························································· -->
-	<div class="index-violin-show-warp section section4" style="background:url(../images/violin_bg.png) center no-repeat;background-size: cover;">
-		<div class="index-violin-show clearfix">
-			<!-- 左侧大图················································· -->
-			<div class="index-violin-show-left f-l-l">
-				[e:loop={"select * from phome_ecms_photo where classid in(26,27,28,29,30) and isgood=1 order by id desc limit 1",10,24,0}]
-				<a href="<?=$bqr[titleurl]?>"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></a>
-				[/e:loop]
-			</div>
-			<!-- 右侧小图················································· -->
-			<div class="index-violin-show-right f-l-l">
-				<ul class="clearfix">
-					[e:loop={"select * from phome_ecms_photo where classid in(26,27,28,29,30) and isgood=2 order by id desc limit 3",10,24,0}]
-					<li class="f-l-l violin-list-lit"><a href="<?=$bqr[titleurl]?>"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></a></li>
-					[/e:loop]
+	<!--<div class="index-violin-show-warp section section4" style="background:url(../images/violin_bg.png) center no-repeat;background-size: cover;">-->
+		<!--<div class="index-violin-show clearfix">-->
+			<!--&lt;!&ndash; 左侧大图················································· &ndash;&gt;-->
+			<!--<div class="index-violin-show-left f-l-l">-->
+				<!--[e:loop={"select * from phome_ecms_photo where classid in(26,27,28,29,30) and isgood=1 order by id desc limit 1",10,24,0}]-->
+				<!--<a href="<?=$bqr[titleurl]?>"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></a>-->
+				<!--[/e:loop]-->
+			<!--</div>-->
+			<!--&lt;!&ndash; 右侧小图················································· &ndash;&gt;-->
+			<!--<div class="index-violin-show-right f-l-l">-->
+				<!--<ul class="clearfix">-->
+					<!--[e:loop={"select * from phome_ecms_photo where classid in(26,27,28,29,30) and isgood=2 order by id desc limit 3",10,24,0}]-->
+					<!--<li class="f-l-l violin-list-lit"><a href="<?=$bqr[titleurl]?>"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></a></li>-->
+					<!--[/e:loop]-->
 
-					[e:loop={"select * from phome_ecms_photo where classid in(26,27,28,29,30) and isgood=3 order by id desc limit 2",10,24,0}]
-					<li class="f-l-l violin-list-big"><a href="<?=$bqr[titleurl]?>"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></a></li>
-					[/e:loop]
-				</ul>
-			</div>
-		</div>
-	</div>
+					<!--[e:loop={"select * from phome_ecms_photo where classid in(26,27,28,29,30) and isgood=3 order by id desc limit 2",10,24,0}]-->
+					<!--<li class="f-l-l violin-list-big"><a href="<?=$bqr[titleurl]?>"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></a></li>-->
+					<!--[/e:loop]-->
+				<!--</ul>-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</div>-->
 	<!-- 吉他展示························································· -->
-	<div class="index-jita-show-warp section section5" style="background:url(../images/jita_bg.png) center no-repeat;background-size: cover;">
+	<!--<div class="index-jita-show-warp section section5" style="background:url(../images/jita_bg.png) center no-repeat;background-size: cover;">-->
 
-		<div class="index-jita-show clearfix">
-			<!-- 左侧大图················································· -->
-			<div class="index-jita-show-right f-l-l">
-				<ul class="clearfix">
+		<!--<div class="index-jita-show clearfix">-->
+			<!--&lt;!&ndash; 左侧大图················································· &ndash;&gt;-->
+			<!--<div class="index-jita-show-right f-l-l">-->
+				<!--<ul class="clearfix">-->
 
-					[e:loop={"select * from phome_ecms_photo where classid in(35,37,38) and isgood=3 order by id desc limit 3",10,24,0}]
-					<li class="f-l-l jita-list-lit"><a href="<?=$bqr[titleurl]?>"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></a></li>
-					[/e:loop]
+					<!--[e:loop={"select * from phome_ecms_photo where classid in(35,37,38) and isgood=3 order by id desc limit 3",10,24,0}]-->
+					<!--<li class="f-l-l jita-list-lit"><a href="<?=$bqr[titleurl]?>"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></a></li>-->
+					<!--[/e:loop]-->
 
-					[e:loop={"select * from phome_ecms_photo where classid in(35,37,38) and isgood=2 order by id desc limit 2",10,24,0}]
-					<li class="f-l-l jita-list-big"><a href="<?=$bqr[titleurl]?>"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></a></li>
-					[/e:loop]
-				</ul>
-			</div>
-			<!-- 右侧小图················································· -->
+					<!--[e:loop={"select * from phome_ecms_photo where classid in(35,37,38) and isgood=2 order by id desc limit 2",10,24,0}]-->
+					<!--<li class="f-l-l jita-list-big"><a href="<?=$bqr[titleurl]?>"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></a></li>-->
+					<!--[/e:loop]-->
+				<!--</ul>-->
+			<!--</div>-->
+			<!--&lt;!&ndash; 右侧小图················································· &ndash;&gt;-->
 
-			<div class="index-jita-show-left f-l-l">
-				[e:loop={"select * from phome_ecms_photo where classid in(35,37,38) and isgood=1 order by id desc limit 1",10,24,0}]
-				<a href="<?=$bqr[titleurl]?>"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></a>
-				[/e:loop]
-			</div>
-		</div>
+			<!--<div class="index-jita-show-left f-l-l">-->
+				<!--[e:loop={"select * from phome_ecms_photo where classid in(35,37,38) and isgood=1 order by id desc limit 1",10,24,0}]-->
+				<!--<a href="<?=$bqr[titleurl]?>"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></a>-->
+				<!--[/e:loop]-->
+			<!--</div>-->
+		<!--</div>-->
 
-	</div>
+	<!--</div>-->
+
 	<div class="footer section section3 fp-auto-height">
 		[!--temp.footer--]
+	</div>
 	</div>
 </body>
 </html>
