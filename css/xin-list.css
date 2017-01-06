@@ -5,21 +5,66 @@
 */
 body a{color: #E29564}
 body a:hover{color: #C56400}
+body .main .list-group-item{
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+}
+body .pagination>.active>a,
+body .pagination>.active>a:focus,
+body .pagination>.active>a:hover,
+body .pagination>.active>span,
+body .pagination>.active>span:focus,
+body .pagination>.active>span:hover{
+	background-color: #cb7047;
+	border-color:#cb7047
+}
+.all-list-left-type .all-list-left-con{
+	padding: 0;
+	margin:0;
+}
 .main{
 	width: 1200px;
 	margin: 0 auto;
 	/*border: 1px solid #ccc;*/
 	/*background-color: #ddd;*/
 }
-.all-list{background-color: #fff;}
 .all-list-warp{
 	width: 1200px;
 	margin: 0 auto;
+
 }
 .list-head-img{
 	width: 1200px;
 	margin: 0 auto;
-	padding: 15px 0;
+	position: relative;
+
+}
+.list-head-img-active{
+	position: absolute;
+	right:0;
+	top:0;
+}
+.head-img-warp{
+	width:100%;
+	height:244px;
+}
+.head-img-warp .nav{
+	width:100%;
+	background-color: #000;
+	margin:0;
+	height: 176px;
+	position: relative;
+}
+.list-title{
+	text-align: center;
+	border-top:#ccc solid 1px;
+	border-bottom:#ccc solid 1px;
+
+}
+.list-title>h2{
+	margin:0;
+	font:32px/60px 微软雅黑;
 }
 .list-head-img>img{
 	width: 1200px;
@@ -27,7 +72,7 @@ body a:hover{color: #C56400}
 .all-list-left{
 	width: 260px;
 	/*border: 1px solid #ccc;*/
-	background-color: #E29564;
+	background-color: #fff;
 }
 .all-list-left-head{
 	border-bottom: 2px solid #DABB90;
@@ -37,6 +82,7 @@ body a:hover{color: #C56400}
 	padding-top: 20px;
 	margin-top: 0;
 	background-color: #E29564;
+	display: none;
 }
 .all-list-left-type{
 	padding-top: 20px;
@@ -44,13 +90,17 @@ body a:hover{color: #C56400}
 	width: 218px;
 }
 .all-list-left-type .list-group-item{
-	background-color: #FFEED4;
+	background-color: #a6a6a6;
 }
 .all-list-left .list-group-item{
-	border: 1px solid #DABB90;
+	border: 1px solid #ccc;
+
 }
 dt.list-group-item a{
 	color: #333;
+	line-height: 42px;
+	display: inline-block;
+	margin-left: 10px;
 }
 .all-list-left-title,
 .all-list-left-con{
@@ -58,10 +108,11 @@ dt.list-group-item a{
 }
 .all-list-left-title a{
 	font:16px/32px 微软雅黑;
-	color: #C66500
+	color: #fff;
 }
 .all-list-left-title{
 	border-top: 1px solid #DABB90;
+	margin:0 20px;
 }
 
 /*左侧完成·······················································*/
@@ -74,6 +125,7 @@ dt.list-group-item a{
 }
 .all-list-right-head{
 	border-bottom: 1px solid #E29564;
+	display: none;
 }
 .list-right-current{
 	background-color: #fff;
@@ -141,7 +193,76 @@ dt.list-group-item a{
 	cursor: pointer;
 	transition: all 1s ease 0s;
 }
-.all-list-left-type>dd:hover,
+.all-list-left-type>dd:hover
+{
+	background-color: #929191;
+}
 .all-list-left-type>dt:hover{
+	background-color: #eee;
+}
+
+
+
+
+
+
+
+.list-menu{
+	height:60px;
+	line-height:60px;
+}
+.list-new-logo{
+	width:260px;
+	background: url("/images/icon/new_fz.png") 0 0 no-repeat;
+}
+.list-new-logo>h3{
+	text-indent:-9999px;
+
+}
+.list-page-num{
+	height:60px;
+}
+.list-page-num .pagination{
+	margin:13px 0;
+}
+.list-title-subtitle{
+	float: right;
+}
+.list-title-subtitle>h3{
+	font:18px/34px 微软雅黑;
+	padding: 5px 30px 5px 15px;
+	background-color: #E29564;
+	color: #fff;
+	margin:0;
+	margin-top: 8px;
+}
+.all-list-left-type .all-list-left-con{
 	background-color: #fff;
 }
+.all-list-left-type .all-list-left-title a:hover{
+	color: #fff;
+}
+.all-list-left-type .all-list-left-con a:hover{
+	color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

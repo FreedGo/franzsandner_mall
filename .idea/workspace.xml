@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcffbbdf-8b19-4d05-ab2f-5876a1aa1c4e" name="默认" comment="备份">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/list_nav_head.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/list_rigth_btm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/nav_head_active.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/new_fz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/new_icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/官网中文二级页_03.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/官网中文二级页_04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/官网中文二级页_06.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/官网中文二级页_11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/xin-list.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newgangqin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/nav_head_active.png" afterPath="$PROJECT_DIR$/images/nav_head_active.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/article.css" afterPath="$PROJECT_DIR$/css/article.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/base.css" afterPath="$PROJECT_DIR$/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/index.js" afterPath="$PROJECT_DIR$/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/xin-list.css" afterPath="$PROJECT_DIR$/css/xin-list.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newgangqin.html" afterPath="$PROJECT_DIR$/newgangqin.html" />
     </list>
     <ignored path="franzsandner_mall.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,7 +41,7 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1957">
+            <state relative-caret-position="635">
               <caret line="103" column="15" lean-forward="false" selection-start-line="103" selection-start-column="15" selection-end-line="103" selection-end-column="15" />
               <folding />
             </state>
@@ -65,32 +51,35 @@
       <file leaf-file-name="article.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/article.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
+            <state relative-caret-position="475">
               <caret line="43" column="16" lean-forward="false" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newgangqin.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="newgangqin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newgangqin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+            <state relative-caret-position="275">
+              <caret line="155" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="234" selection-end-column="4" />
               <folding>
-                <element signature="e#3423#3430#0" expanded="true" />
-                <element signature="e#3642#3649#0" expanded="true" />
+                <element signature="e#761#1336#0" expanded="false" />
+                <element signature="e#1384#1901#0" expanded="false" />
+                <element signature="e#1951#2467#0" expanded="false" />
+                <element signature="e#3551#3558#0" expanded="true" />
+                <element signature="e#3764#3771#0" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xin-list.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="xin-list.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/xin-list.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+            <state relative-caret-position="289">
+              <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -112,6 +101,7 @@
       <find>overflow</find>
       <find>#FFEED4</find>
       <find>sear</find>
+      <find>all-list-left-title</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -135,8 +125,8 @@
         <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/css/article.css" />
         <option value="$PROJECT_DIR$/newfengmian.html" />
-        <option value="$PROJECT_DIR$/css/xin-list.css" />
         <option value="$PROJECT_DIR$/newgangqin.html" />
+        <option value="$PROJECT_DIR$/css/xin-list.css" />
       </list>
     </option>
   </component>
@@ -281,7 +271,7 @@
       <workItem from="1483411407956" duration="15285000" />
       <workItem from="1483579929407" duration="1549000" />
       <workItem from="1483682010981" duration="2109000" />
-      <workItem from="1483684872042" duration="1581000" />
+      <workItem from="1483684872042" duration="10044000" />
     </task>
     <task id="LOCAL-00001" summary="法兰山德商城首页备份">
       <created>1479456570727</created>
@@ -311,20 +301,27 @@
       <option name="project" value="LOCAL" />
       <updated>1483411830386</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="备份">
+      <created>1483686466006</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1483686466006</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45643000" />
+    <option name="totallyTimeSpent" value="54106000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18376069" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18376069" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293348" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20174482" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35877863" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25320512" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -415,8 +412,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3423#3430#0" expanded="true" />
-            <element signature="e#3642#3649#0" expanded="true" />
+            <element signature="e#761#1336#0" expanded="false" />
+            <element signature="e#1384#1901#0" expanded="false" />
+            <element signature="e#1951#2467#0" expanded="false" />
+            <element signature="e#3551#3558#0" expanded="true" />
+            <element signature="e#3764#3771#0" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
@@ -606,39 +606,50 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp28451/home/en.flsd/css/base.css" />
-    <entry file="file://$PROJECT_DIR$/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1957">
-          <caret line="103" column="15" lean-forward="false" selection-start-line="103" selection-start-column="15" selection-end-line="103" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/article.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
+        <state relative-caret-position="475">
           <caret line="43" column="16" lean-forward="false" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/xin-list.css">
+    <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        <state relative-caret-position="635">
+          <caret line="103" column="15" lean-forward="false" selection-start-line="103" selection-start-column="15" selection-end-line="103" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/TimelineRawData-20170106T163230.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/newgangqin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+        <state relative-caret-position="275">
+          <caret line="155" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="234" selection-end-column="4" />
           <folding>
-            <element signature="e#3423#3430#0" expanded="true" />
-            <element signature="e#3642#3649#0" expanded="true" />
+            <element signature="e#761#1336#0" expanded="false" />
+            <element signature="e#1384#1901#0" expanded="false" />
+            <element signature="e#1951#2467#0" expanded="false" />
+            <element signature="e#3551#3558#0" expanded="true" />
+            <element signature="e#3764#3771#0" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/xin-list.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
