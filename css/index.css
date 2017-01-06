@@ -98,7 +98,11 @@ html{
 	height: 100%;
 	/*background-size: cover!important;*/
 }
-
+.fp-tableCell>h3>a{
+	display: inline-block;
+	width:100%;
+	height:100%;
+}
 .piano-bg-warp{
 	position: relative;
 	left: -2000px;
@@ -155,7 +159,7 @@ html{
 	width: 400px;
 	/*background-color: #fff;*/
 	color: #fff;
-	height: 170px;
+	height: 175px;
 	border-radius: 3px;
 	background-color: #fff;
 }
@@ -194,6 +198,7 @@ html{
 	border-radius: 3px;
 	background-color: #fff;
 	padding-top: 10px;
+	/*border-left:#ccc solid 1px;*/
 }
 .index-news-down-list>li h3{
 	font:18px/40px 微软雅黑;
@@ -468,7 +473,7 @@ html{
 .charu{
 	position: absolute;
 	/*bottom:127px;*/
-	top: 510px;
+	top: 530px;
 	margin: 0 auto;
 	left: 50%;
 	transform:scale(1) translateX(-50%) ;

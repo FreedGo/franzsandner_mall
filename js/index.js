@@ -60,7 +60,7 @@
 
 $(function(){
 	$('#dowebok').fullpage({
-		sectionsColor: ['##fff', '##fff','#fff'],
+		sectionsColor: ['#f1f1f1', '#f1f1f1','#f1f1f1'],
 		anchors: ['page1', 'page2', 'page3'],
 		menu: '#menu',
 		navigation: true,
