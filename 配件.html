@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ch-ZN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<?php
+$bclassid=$GLOBALS[navclassid]; //取得本栏目id
+?>
+	[e:loop={"select * from [!db.pre!]enewsclass where classid = '$bclassid' order by classid",0,24,0}]
+	<title><?=$bqr[bname]?>_<?=$public_r['add_sitename']?></title>
+	<meta name="keywords" content="<?=$bqr[classpagekey]?>" />
+	<meta name="description" content="<?=$bqr[intro]?>" />
+	[/e:loop]
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/list.css">
+	<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.SuperSlide.2.1.1.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	<!-- <script src="/js/jquery.fullPage.min.js"></script> -->
+	<!-- <script type="text/javascript" src="/js/index.js"></script> -->
+	<script type="text/javascript" src="/js/list-gang.js"></script>
+	<script type="text/javascript" src="/js/index.js"></script>
+	<script type="text/javascript">
+		// 定义钢琴一级查询
+		function chaxunone(data,data2) {
+			$('.loader').show();
+			$('.list-right-head-title').html(data2);
+			$.ajax({
+				url: '/e/zjk/peijian/one.php',
+				type: 'post',
+				dataType: 'text',
+				data: {fenlei1: data},
+			})
+				.done(function(msg) {
+					$('.loader').hide();
+					console.log({fenlei1: data});
+					console.log(msg);
+					$('.list-right-current>ul').empty().append(msg);
+					console.log("success");
+				})
+				.fail(function() {
+					$('.loader').hide();
+					console.log("error");
+				})
+				.always(function() {
+					console.log("complete");
+				});
+
+		}
+		// 定义钢琴二级查询
+		function chaxuntwo(data,data2) {
+			$('.loader').show();
+			$('.list-right-head-title').html(data2);
+			$.ajax({
+				url: '/e/zjk/peijian/two.php',
+				type: 'post',
+				dataType: 'text',
+				data: {fenlei2: data},
+			})
+				.done(function(msg) {
+					$('.loader').hide();
+					$('.list-right-current>ul').empty().append(msg);
+					console.log("success");
+				})
+				.fail(function() {
+					$('.loader').hide();
+					console.log("error");
+				})
+				.always(function() {
+					console.log("complete");
+				});
+
+		}
+	</script>
+</head>
+<body>
+<!-- 头部··························································· -->
+[!--temp.header--]
+<!-- 头部结束························································ -->
+<!-- 商品列表页······················································ -->
+<section class="main">
+	<div class="all-list-warp">
+		<!-- 列表头部广告············································ -->
+		<div class="list-head-img">
+			<img src="/images/list-head.jpg" alt="">
+		</div>
+		<!-- 列表头部广告············································ -->
+		<!-- 列表内容················································ -->
+		<div class="all-list clearfix">
+			<!-- 列表左侧分类········································ -->
+			<div class="all-list-left f-l-l">
+				<h2 class="all-list-left-head">配件产品分类</h2>
+				<dl class="all-list-left-type type1 list-group">
+					<dd class="list-group-item all-list-left-title"><a href="javascript:void(0)" onclick="chaxunone(1,$(this).html())">法兰山德配件</a></dd>
+				</dl>
+				<!-- <dl class="all-list-left-type type2 list-group">
+					<dd class="list-group-item all-list-left-title"><a href="javascript:void(0)" onclick="chaxuntwo(35,$(this).html())">fason吉他</a></dd>
+				</dl> -->
+				<!-- <dl class="all-list-left-type type6 list-group">
+					<dd class="list-group-item all-list-left-title"><a href="">提琴专业技术</a></dd>
+					<dt class="list-group-item all-list-left-con"><a href="">提琴历史</a></dt>
+					<dt class="list-group-item all-list-left-con"><a href="">保养</a></dt>
+					<dt class="list-group-item all-list-left-con"><a href="">常见问题与维修</a></dt>
+				</dl> -->
+			</div>
+			<!-- 左侧种类列表结束··············································· -->
+			<!-- 右侧详细列表··················································· -->
+			<div class="all-list-right f-l-l">
+				<!-- 列表头及搜索框············································· -->
+				<div class="all-list-right-head clearfix">
+					<h3 class="list-right-head-title f-l-l">热门配件</h3>
+					<div class="search f-l-r">
+						<form action="">
+							<button class="btn  btn-primary f-l-r" type="submit ">搜索</button>
+							<div class="form-group f-l-r">
+								<label class="sr-only" for="search-con">输入搜索内容</label>
+								<input class="form-control f-l-l" id="search-con "  type="text" placeholder="输入搜索内容">
+							</div>
+
+						</form>
+					</div>
+				</div>
+				<div class="list-right-current">
+					<ul class="clearfix load-all-product">
+						[e:loop={"select * from phome_ecms_photo where classid=46  order by newstime desc",10,24,0}]
+						<li class="list-product f-l-l"><a href="<?=$bqsr[titleurl]?>">
+							<div class="list-product-img">
+								<img src="<?=$bqr[titlepic]?>" alt="<?=esub($bqr[title],50)?> ">
+							</div>
+							<h4 class="list-product-title"><?=esub($bqr[title],50)?> </h4>
+							<p class="list-product-intro"><?=esub($bqr[futitle],50)?> </p>
+							<div class="list-product-price">全国统一价:￥<?=$bqr[money]?>元</div>
+						</a></li>
+						[/e:loop]
+					</ul>
+					<!-- loader`````````````````````````````` -->
+					<div class="loaders" style="display: none;">
+						<div class="loader">
+							<div class="loader-inner line-scale">
+								<div></div><div></div><div></div><div></div><div></div>
+							</div>
+						</div>
+					</div>
+					<!-- loader`````````````````````````````` -->
+				</div>
+			</div>
+			<!-- 右侧详细列表结束··················································· -->
+		</div>
+		<!-- 列表内容················································ -->
+	</div>
+</section>
+[!--temp.footer--]
+</body>
+</html>
+<!--
+ * By Freed
+ * flyxz@126.com
+ * 2016-6-7
+ -->
