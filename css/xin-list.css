@@ -88,7 +88,7 @@ body .pagination>.active>span:hover{
 }
 .all-list-left{
 	width: 215px;
-	min-height: 928px;
+	min-height: 904px;
 	/*border: 1px solid #ccc;*/
 	/*background-color: #fff;*/
 	padding-top: 35px;
@@ -164,7 +164,7 @@ dt.list-group-item a{
 }
 .list-right-current{
 	/*background-color: #fff;*/
-	min-height: 985px;
+	min-height: 904px;
 }
 .list-right-head-title{
     font-family: "Microsoft YaHei", SimSun, SimHei;
@@ -190,7 +190,7 @@ dt.list-group-item a{
 	/*border: 1px solid #ccc;*/
 	margin-right: 10px;
 	margin-bottom: 10px;
-	padding-bottom: 10px;
+	/*padding-bottom: 10px;*/
 	/*border-radius: 3px;*/
 	/*height: 317px;*/
 	background-color: #fff;
@@ -209,7 +209,12 @@ dt.list-group-item a{
 	width: 990px;
 	/*padding:  20px 0;*/
 }
-.load-all-product p{max-width: 920px;}
+.load-all-product p{
+	max-width: 976px;
+	background-color: #fff;
+	padding: 10px;
+	margin-bottom: 0;
+}
 .load-all-product p img{max-width: 900px;}
 .list-product-title,
 .list-product-intro,
@@ -270,7 +275,7 @@ dt.list-group-item a{
 	cursor: pointer;
 }
 .list-title-subtitle>h3{
-	font:18px/34px 微软雅黑;
+	font:18px/34px 'Microsoft Yahei';
 	padding: 5px 30px 5px 15px;
 	background-color: #cd7a4e;
 	color: #fff;

@@ -36,7 +36,7 @@
 	<div class="section section1">
 		[e:loop={"select * from phome_enewsad where classid=2 order by onclick desc",10,24,0}]
 		<div class="slide">
-			<h3 style="background:url(<?=$bqr[picurl]?>) #194982 center 0 no-repeat;"><a target="_blank" href="<?=$bqr[url]?>"></a></h3>
+			<h3 style="background:url(<?=$bqr[picurl]?>) #cd7a4e center 0 no-repeat;"><a target="_blank" href="<?=$bqr[url]?>"></a></h3>
 		</div>
 		[/e:loop]
 		<!-- 首页插入的新闻，法兰山德新闻 -->
@@ -57,7 +57,7 @@
 				</div>
 				<div class="index-news-down f-l-l">
 					<ul class="clearfix index-news-down-list ">
-						[e:loop={"select * from phome_ecms_news where classid=40 and isgood=1 order by id desc limit 4",10,24,0}]
+						[e:loop={"select * from phome_ecms_news where classid =60 and isgood=1 order by id desc limit 4",10,24,0}]
 						<li class="f-l-l news-down-list-detaill" >
 							<a href="<?=$bqr[titleurl]?>">
 								<div class="news-down-list-img"><img src="<?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></div>

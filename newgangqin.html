@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<base target="_blank" >
 	<title>法兰山德官方网站</title>
 	<link rel="stylesheet" type="text/css" href="/css/base.css">
 	<link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -11,6 +12,12 @@
 	<script type="text/javascript" src="/js/jquery.SuperSlide.2.1.1.js"></script>
 	<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script src="/js/xin-list.js"></script>
+	<script>
+		$(function () {
+			//	0.页面加载首先获取热门钢琴
+			chaxunremen('11,16,17,18,21,22,23,24,25,59');
+		})
+	</script>
 
 </head>
 <body>
@@ -23,11 +30,11 @@
 		<div class="inner-nav">
 			<!--底部背景图-->
 			<div class="list-head-img">
-				<img src="/images/list_nav_head.png"/>
+				<script src="http://www.franzsandner.com/d/js/acmsd/thea10.js"></script>
 			</div>
 			<!--右侧运动小图-->
 			<div class="list-head-img-active">
-				<img src="/images/nav_head_active.png" />
+				<script src="http://www.franzsandner.com/d/js/acmsd/thea11.js"></script>
 			</div>
 		</div>
 	</div>
@@ -59,11 +66,11 @@
 			<!-- 列表左侧分类········································ -->
 			<div class="all-list-left f-l-l">
 				<div class="list-group-warp">
-					<div class="list-group-item all-list-left-title"><a onclick="chaxunone(,$(this).html())">热门钢琴</a></div>
+					<div class="list-group-item all-list-left-title"><a onclick="chaxunremen('11,16,17,18,21,22,23,24,25,59')">热门钢琴</a></div>
 				</div>
 				<div class="list-group-warp">
 					<div class="list-group-item all-list-left-title">
-						<a onclick="chaxunone(,$(this).html())">奥古斯特•福斯特</a>
+						<a >奥古斯特•福斯特</a>
 						<span class="sanjiao"></span>
 					</div>
 					<dl class="all-list-left-type type1 list-group" style="display: none">
@@ -106,9 +113,9 @@
 						<span class="sanjiao"></span>
 					</div>
 					<dl class="all-list-left-type type1 list-group" style="display: none">
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(,$(this).html())">钢琴历史</a></dt>
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(,$(this).html())">钢琴制造秘密</a></dt>
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(,$(this).html())">钢琴的保养</a></dt>
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxunthree(52)">钢琴历史</a></dt>
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxunthree(53)">钢琴制造秘密</a></dt>
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxunthree(54)">钢琴的保养</a></dt>
 					</dl>
 				</div>
 				<!--<dl class="all-list-left-type type2 list-group">-->
@@ -154,22 +161,10 @@
 				</div>
 				<div class="list-right-current">
 					<ul class="clearfix load-all-product">
-						[e:loop={"select * from phome_ecms_photo where firsttitle=1 and classid in(16,17,18,21,22,23,24,25,59,11) order by newstime desc limit 6",10,24,0}]
-						<li class="list-product f-l-l">
-							<a href="<?=$bqsr[titleurl]?>">
-								<div class="list-product-title-warp">
-									<h4 class="list-product-title"><?=esub($bqr[title],50)?> </h4>
-									<div class="list-product-price">￥<?=$bqr[money]?>元</div>
-								</div>
-								<div class="list-product-img">
-									<img src="<?=$bqr[titlepic]?>" alt="<?=esub($bqr[title],50)?> ">
-								</div>
-							</a>
-						</li>
-						[/e:loop]
+
 					</ul>
 					<!-- loader`````````````````````````````` -->
-					<div class="loaders" style="display: none;">
+					<div class="loaders" style="display: block;">
 						<div class="loader">
 							<div class="loader-inner line-scale">
 								<div></div><div></div><div></div><div></div><div></div>
