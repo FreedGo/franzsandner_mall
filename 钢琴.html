@@ -5,136 +5,141 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<title>法兰山德官方网站</title>
 	<link rel="stylesheet" type="text/css" href="/css/base.css">
-	<link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="/css/xin-list.css">
-	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/list.css">
+	<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="/js/jquery.SuperSlide.2.1.1.js"></script>
-	<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<script src="/js/xin-list.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	<!-- <script src="/js/jquery.fullPage.min.js"></script> -->
+	<!-- <script type="text/javascript" src="/js/index.js"></script> -->
+	<script type="text/javascript" src="/js/list-gang.js"></script>
+	<script type="text/javascript" src="/js/index.js"></script>
+	<script type="text/javascript">
+		// 定义钢琴一级查询
+		function chaxunone(data,data2) {
+			$('.list-right-current>ul').empty();
+			$('.loaders').show();
+			$('.list-right-head-title').html(data2);
+			$.ajax({
+				url: '/e/zjk/gangqin/one.php',
+				type: 'post',
+				dataType: 'html',
+				data: {fenlei1: data},
+			})
+				.done(function(msg) {
+					$('.loaders').hide();
+					console.log({fenlei1: data});
+					console.log(msg);
+					$('.list-right-current>ul').append(msg);
+					console.log("success");
+				})
+				.fail(function() {
+					$('.loaders').hide();
+					console.log("error");
+				})
+				.always(function() {
+					console.log("complete");
+				});
 
+		}
+		// 定义钢琴二级查询
+		function chaxuntwo(data,data2) {
+			$('.list-right-current>ul').empty();
+			$('.loaders').show();
+			$('.list-right-head-title').html(data2);
+			$.ajax({
+				url: '/e/zjk/gangqin/two.php',
+				type: 'post',
+				dataType: 'html',
+				data: {fenlei2: data},
+			})
+				.done(function(msg) {
+					$('.loaders').hide();
+					$('.list-right-current>ul').append(msg);
+					console.log("success");
+				})
+				.fail(function() {
+					$('.loaders').hide();
+					console.log("error");
+				})
+				.always(function() {
+					console.log("complete");
+				});
+
+		}
+		// 定义钢琴文章加载
+		function chaxunthree(data,data2) {
+			$('.list-right-current>ul').empty();
+			$('.loaders').show();
+			$('.list-right-head-title').html(data2);
+			$.ajax({
+				url: '/e/zjk/zhishi/index.php',
+				type: 'post',
+				dataType: 'html',
+				data: {classid: data},
+			})
+				.done(function(msg) {
+					$('.loaders').hide();
+					$('.list-right-current>ul').html(msg);
+					console.log("success");
+				})
+				.fail(function() {
+					$('.loaders').hide();
+					console.log("error");
+				})
+				.always(function() {
+					console.log("complete");
+				});
+
+		}
+	</script>
 </head>
 <body>
 <!-- 头部··························································· -->
 [!--temp.header--]
 <!-- 头部结束························································ -->
-<!-- 列表头部广告············································ -->
-<nav class="head-img-warp">
-	<div class="nav">
-		<div class="inner-nav">
-			<!--底部背景图-->
-			<div class="list-head-img">
-				<img src="/images/list_nav_head.png"/>
-			</div>
-			<!--右侧运动小图-->
-			<div class="list-head-img-active">
-				<img src="/images/nav_head_active.png" />
-			</div>
-		</div>
-	</div>
-</nav>
-<!--/ 列表头部广告············································ -->
 <!-- 商品列表页······················································ -->
 <section class="main">
 	<div class="all-list-warp">
-		<!--列表标题-->
-		<div class="list-title">
-			<h2>钢琴产品分类</h2>
+		<!-- 列表头部广告············································ -->
+		<div class="list-head-img">
+			<img src="/images/list-head.jpg" alt="">
 		</div>
-		<div class="list-menu clearfix">
-			<div class="list-new-logo f-l-l">
-				<h3>德国法兰山德</h3>
-			</div>
-			<div class="list-page-num f-l-l">
-				<ul class="pagination clearfix">
-					<li class="active page-list-item f-l-l" data-page="1"><a>1</a></li>
-				</ul>
-			</div>
-			<div class="list-title-subtitle" data-click="0">
-				<h3>热门钢琴</h3>
-				<span class="sanjiao"></span>
-			</div>
-		</div>
+		<!-- 列表头部广告············································ -->
 		<!-- 列表内容················································ -->
 		<div class="all-list clearfix">
 			<!-- 列表左侧分类········································ -->
 			<div class="all-list-left f-l-l">
-				<div class="list-group-warp">
-					<div class="list-group-item all-list-left-title"><a onclick="chaxunone(,$(this).html())">热门钢琴</a></div>
-				</div>
-				<div class="list-group-warp">
-					<div class="list-group-item all-list-left-title">
-						<a onclick="chaxunone(,$(this).html())">奥古斯特•福斯特</a>
-						<span class="sanjiao"></span>
-					</div>
-					<dl class="all-list-left-type type1 list-group" style="display: none">
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(16)">立式钢琴</a></dt>
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(17)">三角钢琴</a></dt>
-					</dl>
-				</div>
-				<div class="list-group-warp">
-					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(18)">法兰山德德国进口钢琴</a></div>
-				</div>
-				<div class="list-group-warp">
-					<div class="list-group-item all-list-left-title">
-						<a onclick="chaxunone(,$(this).html())">法兰山德立式钢琴</a>
-						<span class="sanjiao"></span>
-					</div>
-					<dl class="all-list-left-type type1 list-group" style="display: none">
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(21)">SP系列</a></dt>
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(22)">FS系列</a></dt>
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(59)">其它系列</a></dt>
-					</dl>
-				</div>
-				<div class="list-group-warp">
-					<div class="list-group-item all-list-left-title">
-						<a onclick="chaxunone(,$(this).html())">法兰山德三角钢琴</a>
-						<span class="sanjiao"></span>
-
-					</div>
-					<dl class="all-list-left-type type1 list-group" style="display: none">
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(23)">沙龙演奏琴</a></dt>
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(24)">专业演奏琴</a></dt>
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(25)">音乐厅用琴</a></dt>
-					</dl>
-				</div>
-				<div class="list-group-warp">
-					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(11)">法兰山德电钢琴</a></div>
-				</div>
-				<div class="list-group-warp">
-					<div class="list-group-item all-list-left-title">
-						<a onclick="chaxunone(,$(this).html())">钢琴专业技术</a>
-						<span class="sanjiao"></span>
-					</div>
-					<dl class="all-list-left-type type1 list-group" style="display: none">
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(,$(this).html())">钢琴历史</a></dt>
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(,$(this).html())">钢琴制造秘密</a></dt>
-						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(,$(this).html())">钢琴的保养</a></dt>
-					</dl>
-				</div>
-				<!--<dl class="all-list-left-type type2 list-group">-->
-				<!--<dd class=" list-group-item all-list-left-title "><a onclick="chaxuntwo(18,$(this).html())">法兰山德德国进口钢琴</a></dd>-->
-				<!--</dl>-->
-				<!--<dl class="all-list-left-type type3 list-group">-->
-				<!--<dd class="list-group-item all-list-left-title"><a onclick="chaxunone(3,$(this).html())">法兰山德立式钢琴</a></dd>-->
-				<!--<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(21,$(this).html())">SP系列</a></dt>-->
-				<!--<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(22,$(this).html())">FS系列</a></dt>-->
-				<!--<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(59,$(this).html())">其它系列</a></dt>-->
-				<!--</dl>-->
-				<!--<dl class="all-list-left-type type4 list-group">-->
-				<!--<dd class=" list-group-item all-list-left-title"><a onclick="chaxunone(4,$(this).html())">法兰山德三角钢琴</a></dd>-->
-				<!--<dt class=" list-group-item all-list-left-con"><a onclick="chaxuntwo(23,$(this).html())">沙龙演奏琴</a></dt>-->
-				<!--<dt class=" list-group-item all-list-left-con"><a onclick="chaxuntwo(24,$(this).html())">专业演奏琴</a></dt>-->
-				<!--<dt class=" list-group-item all-list-left-con"><a onclick="chaxuntwo(25,$(this).html())">音乐厅用琴</a></dt>-->
-				<!--</dl>-->
-				<!--<dl class="all-list-left-type type5 list-group">-->
-				<!--<dd class="list-group-item all-list-left-title"><a onclick="chaxuntwo(11,$(this).html())">法兰山德电钢琴</a></dd>-->
-				<!--</dl>-->
-				<!--<dl class="all-list-left-type type6 list-group">-->
-				<!--<dd class="list-group-item all-list-left-title"><a>钢琴专业技术</a></dd>-->
-				<!--<dt class="list-group-item all-list-left-con"><a onclick="chaxunthree(52,$(this).html())">钢琴历史</a></dt>-->
-				<!--<dt class="list-group-item all-list-left-con"><a onclick="chaxunthree(53,$(this).html())">钢琴制造秘密</a></dt>-->
-				<!--<dt class="list-group-item all-list-left-con"><a onclick="chaxunthree(54,$(this).html())">钢琴的保养</a></dt>-->
-				<!--</dl>-->
+				<h2 class="all-list-left-head">钢琴产品分类</h2>
+				<dl class="all-list-left-type type1 list-group">
+					<dd class="list-group-item all-list-left-title"><a href="javascript:void(0)" onclick="chaxunone(1,$(this).html())">奥古斯特•福斯特</a></dd>
+					<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(16,$(this).html())">立式钢琴</a></dt>
+					<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(17,$(this).html())">三角钢琴</a></dt>
+				</dl>
+				<dl class="all-list-left-type type2 list-group">
+					<dd class=" list-group-item all-list-left-title "><a onclick="chaxuntwo(18,$(this).html())">法兰山德德国进口钢琴</a></dd>
+				</dl>
+				<dl class="all-list-left-type type3 list-group">
+					<dd class="list-group-item all-list-left-title"><a onclick="chaxunone(3,$(this).html())">法兰山德立式钢琴</a></dd>
+					<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(21,$(this).html())">SP系列</a></dt>
+					<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(22,$(this).html())">FS系列</a></dt>
+					<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(59,$(this).html())">其它系列</a></dt>
+				</dl>
+				<dl class="all-list-left-type type4 list-group">
+					<dd class=" list-group-item all-list-left-title"><a onclick="chaxunone(4,$(this).html())">法兰山德三角钢琴</a></dd>
+					<dt class=" list-group-item all-list-left-con"><a onclick="chaxuntwo(23,$(this).html())">沙龙演奏琴</a></dt>
+					<dt class=" list-group-item all-list-left-con"><a onclick="chaxuntwo(24,$(this).html())">专业演奏琴</a></dt>
+					<dt class=" list-group-item all-list-left-con"><a onclick="chaxuntwo(25,$(this).html())">音乐厅用琴</a></dt>
+				</dl>
+				<dl class="all-list-left-type type5 list-group">
+					<dd class="list-group-item all-list-left-title"><a onclick="chaxuntwo(11,$(this).html())">法兰山德电钢琴</a></dd>
+				</dl>
+				<dl class="all-list-left-type type6 list-group">
+					<dd class="list-group-item all-list-left-title"><a>钢琴专业技术</a></dd>
+					<dt class="list-group-item all-list-left-con"><a onclick="chaxunthree(52,$(this).html())">钢琴历史</a></dt>
+					<dt class="list-group-item all-list-left-con"><a onclick="chaxunthree(53,$(this).html())">钢琴制造秘密</a></dt>
+					<dt class="list-group-item all-list-left-con"><a onclick="chaxunthree(54,$(this).html())">钢琴的保养</a></dt>
+				</dl>
 			</div>
 			<!-- 左侧种类列表结束··············································· -->
 			<!-- 右侧详细列表··················································· -->
@@ -149,23 +154,21 @@
 								<label class="sr-only" for="search-con">输入搜索内容</label>
 								<input class="form-control f-l-l" id="search-con "  type="text" placeholder="输入搜索内容">
 							</div>
+
 						</form>
 					</div>
 				</div>
 				<div class="list-right-current">
 					<ul class="clearfix load-all-product">
-						[e:loop={"select * from phome_ecms_photo where firsttitle=1 and classid in(16,17,18,21,22,23,24,25,59,11) order by newstime desc limit 6",10,24,0}]
-						<li class="list-product f-l-l">
-							<a href="<?=$bqsr[titleurl]?>">
-								<div class="list-product-title-warp">
-									<h4 class="list-product-title"><?=esub($bqr[title],50)?> </h4>
-									<div class="list-product-price">￥<?=$bqr[money]?>元</div>
-								</div>
-								<div class="list-product-img">
-									<img src="<?=$bqr[titlepic]?>" alt="<?=esub($bqr[title],50)?> ">
-								</div>
-							</a>
-						</li>
+						[e:loop={"select * from phome_ecms_photo where firsttitle=1 and classid in(16,17,18,21,22,23,24,25,59,11) order by newstime desc",10,24,0}]
+						<li class="list-product f-l-l"><a href="<?=$bqsr[titleurl]?>">
+							<div class="list-product-img">
+								<img src="<?=$bqr[titlepic]?>" alt="<?=esub($bqr[title],50)?> ">
+							</div>
+							<h4 class="list-product-title"><?=esub($bqr[title],50)?> </h4>
+							<p class="list-product-intro"><?=esub($bqr[futitle],50)?> </p>
+							<div class="list-product-price">全国统一价:￥<?=$bqr[money]?>元</div>
+						</a></li>
 						[/e:loop]
 					</ul>
 					<!-- loader`````````````````````````````` -->
@@ -187,3 +190,8 @@
 [!--temp.footer--]
 </body>
 </html>
+<!--
+ * By Freed
+ * flyxz@126.com
+ * 2016-6-7
+ -->

@@ -3,21 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fcffbbdf-8b19-4d05-ab2f-5876a1aa1c4e" name="默认" comment="备份">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/xin-list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/e/zjk/gangqin/xin.two.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/钢琴.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/article.css" afterPath="$PROJECT_DIR$/css/article.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/base.css" afterPath="$PROJECT_DIR$/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/gloab.css" afterPath="$PROJECT_DIR$/css/gloab.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/list.css" afterPath="$PROJECT_DIR$/css/list.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/news.css" afterPath="$PROJECT_DIR$/css/news.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/reg.css" afterPath="$PROJECT_DIR$/css/reg.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sale-net.css" afterPath="$PROJECT_DIR$/css/sale-net.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/vali.css" afterPath="$PROJECT_DIR$/css/vali.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/xin-list.css" afterPath="$PROJECT_DIR$/css/xin-list.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newgangqin.html" afterPath="$PROJECT_DIR$/newgangqin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/钢琴.html" afterPath="$PROJECT_DIR$/钢琴.html" />
     </list>
     <ignored path="franzsandner_mall.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,8 +60,8 @@
       <file leaf-file-name="newgangqin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newgangqin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-133">
-              <caret line="74" column="90" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
+            <state relative-caret-position="114">
+              <caret line="87" column="39" lean-forward="true" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
               <folding>
                 <element signature="n#style#0;n#dl#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#dl#0;n#div#3;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -90,13 +77,9 @@
         <entry file="file://$PROJECT_DIR$/钢琴.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="558">
-              <caret line="189" column="0" lean-forward="true" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
+              <caret line="196" column="4" lean-forward="false" selection-start-line="196" selection-start-column="4" selection-end-line="196" selection-end-column="4" />
               <folding>
-                <element signature="n#style#0;n#dl#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#dl#0;n#div#3;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#dl#0;n#div#4;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#dl#0;n#div#6;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -416,7 +399,7 @@
       <workItem from="1483579929407" duration="1549000" />
       <workItem from="1483682010981" duration="2109000" />
       <workItem from="1483684872042" duration="10087000" />
-      <workItem from="1483921512617" duration="18390000" />
+      <workItem from="1483921512617" duration="18473000" />
     </task>
     <task id="LOCAL-00001" summary="法兰山德商城首页备份">
       <created>1479456570727</created>
@@ -460,11 +443,18 @@
       <option name="project" value="LOCAL" />
       <updated>1483695242363</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="备份">
+      <created>1483941170733</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1483941170733</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72539000" />
+    <option name="totallyTimeSpent" value="72622000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="0" />
@@ -863,8 +853,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/newgangqin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="74" column="90" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
+        <state relative-caret-position="114">
+          <caret line="87" column="39" lean-forward="true" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
           <folding>
             <element signature="n#style#0;n#dl#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#dl#0;n#div#3;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -878,13 +868,9 @@
     <entry file="file://$PROJECT_DIR$/钢琴.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
-          <caret line="189" column="0" lean-forward="true" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
+          <caret line="196" column="4" lean-forward="false" selection-start-line="196" selection-start-column="4" selection-end-line="196" selection-end-column="4" />
           <folding>
-            <element signature="n#style#0;n#dl#0;n#div#1;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#dl#0;n#div#3;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#dl#0;n#div#4;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#dl#0;n#div#6;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
