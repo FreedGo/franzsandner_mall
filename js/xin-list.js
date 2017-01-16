@@ -73,9 +73,11 @@ function chaxunremen(data) {
  * 定义钢琴二级查询
  * @param data
  */
-function chaxuntwo(data) {
+function chaxuntwo(data,obj) {
 	$('.list-right-current>ul').empty();
 	$('.loaders').show();
+	listGroupIndex = obj.parents('.list-group-warp').index();
+	$('.list-title-subtitle').attr('data-click',listGroupIndex).children('h3').html(obj.parents('.list-group-warp').find('.all-list-left-title a').html());
 	$.ajax({
 		url: '/e/zjk/chanpin/xin.two.php',
 		type: 'post',
@@ -109,10 +111,12 @@ function chaxuntwo(data) {
  * @param data
  * @param data2
  */
-function chaxunthree(data,data2) {
+function chaxunthree(data,obj) {
 	$('.list-right-current>ul').empty();
 	$('.loaders').show();
-	$('.list-right-head-title').html(data2);
+	$('.pagination').empty();//清空页码
+	listGroupIndex = obj.parents('.list-group-warp').index();
+	$('.list-title-subtitle').attr('data-click',listGroupIndex).children('h3').html(obj.parents('.list-group-warp').find('.all-list-left-title a').html());
 	$.ajax({
 		url: '/e/zjk/zhishi/index.php',
 		type: 'post',
@@ -193,7 +197,7 @@ $(function(){
 	$('.pagination').on('click','.page-list-item',function(){
 		$(this).addClass('active').siblings().removeClass('active');
 		var pageNum = parseInt($(this).attr('data-page'));
-		console.log(pageNum);
+//		console.log(pageNum);
 		$('.load-all-product').empty();
 		loadData(pageNum);
 
