@@ -118,6 +118,7 @@ $(function(){
 	setInterval(function(){
         $.fn.fullpage.moveSlideRight();
     }, 6000);
-
-   
+//	$.fn.fullpage.destroy();
+//	$.fn.fullpage.setAllowScrolling(false);
+//	$.fn.fullpage.setKeyboardScrolling(false);
 });

@@ -114,22 +114,22 @@ html{
 	left: -2000px;
 }
 .index-pinao-price>h2{
-	font:200 36px/54px 微软雅黑;
+	font:200 36px/54px 'Microsoft YaHei';
 	color: #fff;
 	margin: 0;
 }
 .index-pinao-price>h3{
-	font: 34px/54px 微软雅黑;
+	font: 34px/54px 'Microsoft YaHei';
 	color: #fff;
 	margin: 0;
 }
 .index-pinao-price-msg{
-	font:26px/40px 微软雅黑;
+	font:26px/40px 'Microsoft YaHei';
 	color: #ff004e;
 }
 .index-pinao-price>h4{
 	padding-top: 20px;
-	font:24px/50px 微软雅黑;
+	font:24px/50px 'Microsoft YaHei';
 	color: #fff;
 	margin: 0
 }
@@ -137,7 +137,7 @@ html{
 	margin-top: 20px;
 	display: inline-block;
 	padding: 10px 20px;
-	font:24px/40px 微软雅黑;
+	font:24px/40px 'Microsoft YaHei';
 	color: #fff;
 	border: 2px solid #fff;
 }
@@ -170,7 +170,7 @@ html{
 	color: #cb7047;
 }
 .news-left-con>ul>li a{
-	font:14px/24px 微软雅黑;
+	font:14px/24px 'Microsoft YaHei';
 	-ms-text-overflow: ellipsis;
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -181,7 +181,7 @@ html{
 
 }
 .news-left-con>ul>li.news-left-con-head a{
-	font:18px/34px 微软雅黑;
+	font:18px/34px 'Microsoft YaHei';
 	height: 34px;
 }
 .index-news-down-list{
@@ -201,7 +201,7 @@ html{
 	/*border-left:#ccc solid 1px;*/
 }
 .index-news-down-list>li h3{
-	font:18px/40px 微软雅黑;
+	font:18px/40px 'Microsoft YaHei';
 	text-align: center;
 	overflow: hidden;
 	-ms-text-overflow: ellipsis;
@@ -220,7 +220,7 @@ html{
 	height: 110px;
 }
 .index-news-down-list>li p{
-	font:14px/24px 微软雅黑;
+	font:14px/24px 'Microsoft YaHei';
 	height: 192px;
 	overflow: hidden;
 }
