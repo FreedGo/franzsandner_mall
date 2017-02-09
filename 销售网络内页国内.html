@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>[!--title--]_[!--class.name--]_[!--bclass.name--]_好琴声</title>
+	<meta name="keywords" content="[!--guanjian--]" />
+	<meta name="description" content="[!--smalltext--]" />
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
+	<link href="/css/sale-net.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+[!--temp.header--]
+<div id="body_container">
+	<div class="banner">
+		<div class="banner-content">
+			<script src="http://www.franzsandner.com/d/js/acmsd/thea19.js"></script>
+		</div>
+		<style>
+			.seller-head-content>p{
+				margin-left:20px;
+			}
+			.banner{
+				background-color: #000;
+			}
+			.banner-content{
+				width:1200px;
+				margin:0 auto;
+			}
+		</style>
+	</div>
+	<div class="divsd">
+		<div class="new2"></div>
+		<div class="main1"></div>
+		<div class="m_n">
+			<div class="main_new2 clearfix">
+				<div class="h203">销售网络</div>
+				<!-- 左侧菜单开始···················································· -->
+
+				<!-- 右侧菜单开始················································ -->
+				<div class="nn_right qinhang-datill">
+					<h4 class="right05">&gt;&gt; <a href="/xiaoshou/">销售网络</a>&gt; <a href="/xiaoshou/shopone/">国内代理商</a>&gt;[!--title--] </h4>
+					<!-- 代理商店面详情 -->
+					<div class="seller-datill">
+						<!-- 头部信息··············································· -->
+						<div class="seller-head-title clearfix">
+							<h2 class="f-l-l">[!--title--]</h2>
+							<span class="f-l-l">代理产品：[!--pbrand--]</span>
+						</div>
+						<div class="seller-head-content clearfix">
+							<p class="f-l-l">地址：[!--intro--]</p>
+							<span class="f-l-l">电 话：[!--phone--]</span>
+						</div>
+						<!-- 头部信息结束··········································· -->
+						<!-- 下部图片信息··········································· -->
+						<div class="seller-content-img clearfix">
+							<div class="foucebox clearfix" style="margin:0 auto">
+								<!-- 大图····························· -->
+								<div class="bd">
+									<ul>
+										<li><img  src="[!--photo_1--]"></li>
+										<li><img  src="[!--photo_2--]"></li>
+										<li><img  src="[!--photo_3--]"></li>
+										<li><img  src="[!--photo_4--]"></li>
+										<li><video class="seller-video" src="[!--video_1--]" controls ></video></li>
+									</ul>
+								</div>
+								<!-- 小标题···························· -->
+								<div class="hd">
+									<div  class="hoverBg" ></div>
+									<ul class="list-group">
+										<li class="list-group-item">琴行外景</li>
+										<li class="list-group-item">品牌形象展示区</li>
+										<li class="list-group-item">厅堂全景</li>
+										<li class="list-group-item">精品展示区</li>
+										<li class="list-group-item">琴行视频观看</li>
+									</ul>
+								</div>
+
+							</div>
+							<script type="text/javascript" src="/js/jquery.SuperSlide.2.1.1.js"></script>
+							<script type="text/javascript">
+								$(function() {
+									jQuery(".foucebox").slide({ mainCell:".bd ul", effect:"fold", autoPlay:false,trigger:'click', delayTime:300, triggerTime:50, startFun:function(i){
+										//下面代码控制鼠标状态滑动
+										jQuery(".foucebox .hoverBg").animate({"margin-top":99*i},150);
+									}
+									});
+									$('.hd .list-group-item').on('click', function(event) {
+										$('.seller-video')[0].pause();
+									});
+								});
+							</script>
+						</div>
+						<!-- 下部图片信息结束··········································· -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+[!--temp.footer--]
+</body>
+</html>
