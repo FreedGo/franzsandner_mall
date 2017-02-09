@@ -195,121 +195,121 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 ?>
 
 	<script type="text/javascript">
-		$(function() {
-			// $.ajax({
-			//  url: projectName+'/idea123Action.do?method=getIdea123MapData&reportName='+reportName,
-			//  data: data,
-			//  dataType: 'json',
-			//  success: function(data){
+			$(function() {
+				// $.ajax({
+				//  url: projectName+'/idea123Action.do?method=getIdea123MapData&reportName='+reportName,
+				//  data: data,
+				//  dataType: 'json',
+				//  success: function(data){
 
-			var data = {
-				"jiangsu":{"value":"<?=$jiangsu?>家","index":"1","url":"/e/template/incfile/xiaoshou.php?china=江苏","stateInitColor":"0"},
-				"henan":{"value":"<?=$henan?>家","index":"2","url":"/e/template/incfile/xiaoshou.php?china=河南","stateInitColor":"0"},
-				"anhui":{"value":"<?=$anhui?>家","index":"3","url":"/e/template/incfile/xiaoshou.php?china=安徽","stateInitColor":"0"},
-				"zhejiang":{"value":"<?=$zhejiang?>家","index":"4","url":"/e/template/incfile/xiaoshou.php?china=浙江","stateInitColor":"0"},
-				"liaoning":{"value":"<?=$liaoning?>家","index":"5","url":"/e/template/incfile/xiaoshou.php?china=辽宁","stateInitColor":"0"},
-				"beijing":{"value":"<?=$beijing?>家","index":"6","url":"/e/template/incfile/xiaoshou.php?china=北京","stateInitColor":"1"},
-				"hubei":{"value":"<?=$hubei?>家","index":"7","url":"/e/template/incfile/xiaoshou.php?china=湖北","stateInitColor":"1"},
-				"jilin":{"value":"<?=$jilin?>家","index":"8","url":"/e/template/incfile/xiaoshou.php?china=吉林","stateInitColor":"1"},
-				"shanghai":{"value":"<?=$shanghai?>家","index":"9","url":"/e/template/incfile/xiaoshou.php?china=上海","stateInitColor":"1"},
-				"guangxi":{"value":"<?=$guangxi?>家","index":"10","url":"/e/template/incfile/xiaoshou.php?china=广西","stateInitColor":"1"},
-				"sichuan":{"value":"<?=$sichuan?>家","index":"11","url":"/e/template/incfile/xiaoshou.php?china=四川","stateInitColor":"2"},
-				"guizhou":{"value":"<?=$guizhou?>家","index":"12","url":"/e/template/incfile/xiaoshou.php?china=贵州","stateInitColor":"2"},
-				"hunan":{"value":"<?=$hunan?>家","index":"13","url":"/e/template/incfile/xiaoshou.php?china=湖南","stateInitColor":"2"},
-				"shandong":{"value":"<?=$shandong?>家","index":"14","url":"/e/template/incfile/xiaoshou.php?china=山东","stateInitColor":"2"},
-				"guangdong":{"value":"<?=$guangdong?>家","index":"15","url":"/e/template/incfile/xiaoshou.php?china=广东","stateInitColor":"2"},
-				"jiangxi":{"value":"<?=$jiangxi?>家","index":"16","url":"/e/template/incfile/xiaoshou.php?china=江西","stateInitColor":"3"},
-				"fujian":{"value":"<?=$fujian?>家","index":"17","url":"/e/template/incfile/xiaoshou.php?china=福建","stateInitColor":"3"},
-				"yunnan":{"value":"<?=$yunnan?>家","index":"18","url":"/e/template/incfile/xiaoshou.php?china=云南","stateInitColor":"3"},
-				"hainan":{"value":"<?=$hainan?>家","index":"19","url":"/e/template/incfile/xiaoshou.php?china=海南","stateInitColor":"3"},
-				"shanxi":{"value":"<?=$shanxi?>家","index":"20","url":"/e/template/incfile/xiaoshou.php?china=山西","stateInitColor":"3"},
-				"hebei":{"value":"<?=$hebei?>家","index":"21","url":"/e/template/incfile/xiaoshou.php?china=河北","stateInitColor":"4"},
-				"neimongol":{"value":"<?=$neimongol?>家","index":"22","url":"/e/template/incfile/xiaoshou.php?china=内蒙古","stateInitColor":"4"},
-				"tianjin":{"value":"<?=$tianjin?>家","index":"23","url":"/e/template/incfile/xiaoshou.php?china=天津","stateInitColor":"4"},
-				"gansu":{"value":"<?=$gansu?>家","index":"24","url":"/e/template/incfile/xiaoshou.php?china=甘肃","stateInitColor":"4"},
-				"shaanxi":{"value":"<?=$shaanxi?>家","index":"25","url":"/e/template/incfile/xiaoshou.php?china=陕西","stateInitColor":"4"},
-				"macau":{"value":"<?=$macau?>家","index":"26","url":"/e/template/incfile/xiaoshou.php?china=澳门","stateInitColor":"7"},
-				"hongkong":{"value":"<?=$hongkong?>家","index":"27","url":"/e/template/incfile/xiaoshou.php?china=香港","stateInitColor":"7"},
-				"taiwan":{"value":"<?=$taiwan?>家","index":"28","url":"/e/template/incfile/xiaoshou.php?china=台湾","stateInitColor":"7"},
-				"qinghai":{"value":"<?=$qinghai?>家","index":"29","url":"/e/template/incfile/xiaoshou.php?china=青海","stateInitColor":"7"},
-				"xizang":{"value":"<?=$xizang?>家","index":"30","url":"/e/template/incfile/xiaoshou.php?china=西藏","stateInitColor":"7"},
-				"ningxia":{"value":"<?=$ningxia?>家","index":"31","url":"/e/template/incfile/xiaoshou.php?china=宁夏","stateInitColor":"7"},
-				"xinjiang":{"value":"<?=$xinjiang?>家","index":"32","url":"/e/template/incfile/xiaoshou.php?china=新疆","stateInitColor":"7"},
-				"heilongjiang":{"value":"<?=$heilongjiang?>家","index":"33","url":"/e/template/incfile/xiaoshou.php?china=黑龙江","stateInitColor":"7"},
-				"chongqing":{"value":"<?=$chongqing?>家","index":"34","url":"/e/template/incfile/xiaoshou.php?china=重庆","stateInitClor":"7"}
-			};
-			// 添加左侧列表
-			var i = 1;
-			for(k in data){
-				if(i <= 18){
-					var _cls = i < 4 ? 'active' : '';
-					$('#MapControl .list1').append('<li name="'+k+'"><a href="'+data[k].url+'"><div class="mapInfo"><i class="'+_cls+'">'+(i++)+'</i><span>'+chinaMapConfig.names[k]+'</span><b>'+data[k].value+'</b></div></a></li>')
-				}else if(i <= 36){
-					$('#MapControl .list2').append('<li name="'+k+'"><a href="'+data[k].url+'"><div class="mapInfo"><i class="'+_cls+'">'+(i++)+'</i><span>'+chinaMapConfig.names[k]+'</span><b>'+data[k].value+'</b></div></a></li>')
-				}else{
-					$('#MapControl .list3').append('<li name="'+k+'"><div class="mapInfo"><i>'+(i++)+'</i><span>'+chinaMapConfig.names[k]+'</span><b>'+data[k].value+'</b></div></li>')
-				}
-			}
-
-			var mapObj_1 = {};
-			var stateColorList = ['003399', '0058B0', '0071E1', '1C8DFF', '51A8FF', '82C0FF', 'AAD5ee', 'AAD5FF'];
-			// 地图初始化
-			$('#RegionMap').SVGMap({
-				external: mapObj_1,
-				mapName: 'china',
-				mapWidth: 880,
-				mapHeight: 880,
-				stateData: data,//自定义数据
-				// stateTipWidth: 118,
-				// stateTipHeight: 47,
-				// stateTipX: 2,
-				// stateTipY: 0,
-				stateTipHtml: function (mapData, obj) {
-					var _value = mapData[obj.id].value;
-					var _idx = mapData[obj.id].index;
-					var active = '';
-					_idx < 4 ? active = 'active' : active = '';
-					var tipStr = '<div class="mapInfo"><i class="' + active + '">' + _idx + '</i><span>' + obj.name + '</span><b>' + _value + '</b></div>';
-					return tipStr;
-				},
-				clickCallback: function(stateData, obj){//点击回掉
-					// console.log(stateData);
-					// console.log(obj.id);
-					for(k in stateData){
-						if (k==obj.id) {//点击地图上的省份的时候，打开相应省份的列表
-							window.open(stateData[k].url);
-						}
+				var data = {
+					"jiangsu":{"value":"<?=$jiangsu?>家","index":"1","url":"/e/template/incfile/xiaoshou.php?china=江苏","stateInitColor":"0"},
+					"henan":{"value":"<?=$henan?>家","index":"2","url":"/e/template/incfile/xiaoshou.php?china=河南","stateInitColor":"0"},
+					"anhui":{"value":"<?=$anhui?>家","index":"3","url":"/e/template/incfile/xiaoshou.php?china=安徽","stateInitColor":"0"},
+					"zhejiang":{"value":"<?=$zhejiang?>家","index":"4","url":"/e/template/incfile/xiaoshou.php?china=浙江","stateInitColor":"0"},
+					"liaoning":{"value":"<?=$liaoning?>家","index":"5","url":"/e/template/incfile/xiaoshou.php?china=辽宁","stateInitColor":"0"},
+					"beijing":{"value":"<?=$beijing?>家","index":"6","url":"/e/template/incfile/xiaoshou.php?china=北京","stateInitColor":"1"},
+					"hubei":{"value":"<?=$hubei?>家","index":"7","url":"/e/template/incfile/xiaoshou.php?china=湖北","stateInitColor":"1"},
+					"jilin":{"value":"<?=$jilin?>家","index":"8","url":"/e/template/incfile/xiaoshou.php?china=吉林","stateInitColor":"1"},
+					"shanghai":{"value":"<?=$shanghai?>家","index":"9","url":"/e/template/incfile/xiaoshou.php?china=上海","stateInitColor":"1"},
+					"guangxi":{"value":"<?=$guangxi?>家","index":"10","url":"/e/template/incfile/xiaoshou.php?china=广西","stateInitColor":"1"},
+					"sichuan":{"value":"<?=$sichuan?>家","index":"11","url":"/e/template/incfile/xiaoshou.php?china=四川","stateInitColor":"2"},
+					"guizhou":{"value":"<?=$guizhou?>家","index":"12","url":"/e/template/incfile/xiaoshou.php?china=贵州","stateInitColor":"2"},
+					"hunan":{"value":"<?=$hunan?>家","index":"13","url":"/e/template/incfile/xiaoshou.php?china=湖南","stateInitColor":"2"},
+					"shandong":{"value":"<?=$shandong?>家","index":"14","url":"/e/template/incfile/xiaoshou.php?china=山东","stateInitColor":"2"},
+					"guangdong":{"value":"<?=$guangdong?>家","index":"15","url":"/e/template/incfile/xiaoshou.php?china=广东","stateInitColor":"2"},
+					"jiangxi":{"value":"<?=$jiangxi?>家","index":"16","url":"/e/template/incfile/xiaoshou.php?china=江西","stateInitColor":"3"},
+					"fujian":{"value":"<?=$fujian?>家","index":"17","url":"/e/template/incfile/xiaoshou.php?china=福建","stateInitColor":"3"},
+					"yunnan":{"value":"<?=$yunnan?>家","index":"18","url":"/e/template/incfile/xiaoshou.php?china=云南","stateInitColor":"3"},
+					"hainan":{"value":"<?=$hainan?>家","index":"19","url":"/e/template/incfile/xiaoshou.php?china=海南","stateInitColor":"3"},
+					"shanxi":{"value":"<?=$shanxi?>家","index":"20","url":"/e/template/incfile/xiaoshou.php?china=山西","stateInitColor":"3"},
+					"hebei":{"value":"<?=$hebei?>家","index":"21","url":"/e/template/incfile/xiaoshou.php?china=河北","stateInitColor":"4"},
+					"neimongol":{"value":"<?=$neimongol?>家","index":"22","url":"/e/template/incfile/xiaoshou.php?china=内蒙古","stateInitColor":"4"},
+					"tianjin":{"value":"<?=$tianjin?>家","index":"23","url":"/e/template/incfile/xiaoshou.php?china=天津","stateInitColor":"4"},
+					"gansu":{"value":"<?=$gansu?>家","index":"24","url":"/e/template/incfile/xiaoshou.php?china=甘肃","stateInitColor":"4"},
+					"shaanxi":{"value":"<?=$shaanxi?>家","index":"25","url":"/e/template/incfile/xiaoshou.php?china=陕西","stateInitColor":"4"},
+					"macau":{"value":"<?=$macau?>家","index":"26","url":"/e/template/incfile/xiaoshou.php?china=澳门","stateInitColor":"7"},
+					"hongkong":{"value":"<?=$hongkong?>家","index":"27","url":"/e/template/incfile/xiaoshou.php?china=香港","stateInitColor":"7"},
+					"taiwan":{"value":"<?=$taiwan?>家","index":"28","url":"/e/template/incfile/xiaoshou.php?china=台湾","stateInitColor":"7"},
+					"qinghai":{"value":"<?=$qinghai?>家","index":"29","url":"/e/template/incfile/xiaoshou.php?china=青海","stateInitColor":"7"},
+					"xizang":{"value":"<?=$xizang?>家","index":"30","url":"/e/template/incfile/xiaoshou.php?china=西藏","stateInitColor":"7"},
+					"ningxia":{"value":"<?=$ningxia?>家","index":"31","url":"/e/template/incfile/xiaoshou.php?china=宁夏","stateInitColor":"7"},
+					"xinjiang":{"value":"<?=$xinjiang?>家","index":"32","url":"/e/template/incfile/xiaoshou.php?china=新疆","stateInitColor":"7"},
+					"heilongjiang":{"value":"<?=$heilongjiang?>家","index":"33","url":"/e/template/incfile/xiaoshou.php?china=黑龙江","stateInitColor":"7"},
+					"chongqing":{"value":"<?=$chongqing?>家","index":"34","url":"/e/template/incfile/xiaoshou.php?china=重庆","stateInitClor":"7"}
+				};
+				// 添加左侧列表
+				var i = 1;
+				for(k in data){
+					if(i <= 18){
+						var _cls = i < 4 ? 'active' : '';
+						$('#MapControl .list1').append('<li name="'+k+'"><a href="'+data[k].url+'"><div class="mapInfo"><i class="'+_cls+'">'+(i++)+'</i><span>'+chinaMapConfig.names[k]+'</span><b>'+data[k].value+'</b></div></a></li>')
+					}else if(i <= 36){
+						$('#MapControl .list2').append('<li name="'+k+'"><a href="'+data[k].url+'"><div class="mapInfo"><i class="'+_cls+'">'+(i++)+'</i><span>'+chinaMapConfig.names[k]+'</span><b>'+data[k].value+'</b></div></a></li>')
+					}else{
+						$('#MapControl .list3').append('<li name="'+k+'"><div class="mapInfo"><i>'+(i++)+'</i><span>'+chinaMapConfig.names[k]+'</span><b>'+data[k].value+'</b></div></li>')
 					}
 				}
-			});
-			$('#MapControl li').hover(function () {//鼠标hover事件
-				var thisName = $(this).attr('name');
 
-				var thisHtml = $(this).html();
-				$('#MapControl li').removeClass('select');
-				$(this).addClass('select');
-				$(document.body).append('<div id="StateTip"></div');
-				$('#StateTip').css({
-					left: $(mapObj_1[thisName].node).offset().left - 50,
-					top: $(mapObj_1[thisName].node).offset().top - 40
-				}).html(thisHtml).show();
-				mapObj_1[thisName].attr({
-					fill: '#E99A4D'
+				var mapObj_1 = {};
+				var stateColorList = ['003399', '0058B0', '0071E1', '1C8DFF', '51A8FF', '82C0FF', 'AAD5ee', 'AAD5FF'];
+				// 地图初始化
+				$('#RegionMap').SVGMap({
+					external: mapObj_1,
+					mapName: 'china',
+					mapWidth: 880,
+					mapHeight: 880,
+					stateData: data,//自定义数据
+					// stateTipWidth: 118,
+					// stateTipHeight: 47,
+					// stateTipX: 2,
+					// stateTipY: 0,
+					stateTipHtml: function (mapData, obj) {
+						var _value = mapData[obj.id].value;
+						var _idx = mapData[obj.id].index;
+						var active = '';
+						_idx < 4 ? active = 'active' : active = '';
+						var tipStr = '<div class="mapInfo"><i class="' + active + '">' + _idx + '</i><span>' + obj.name + '</span><b>' + _value + '</b></div>';
+						return tipStr;
+					},
+					clickCallback: function(stateData, obj){//点击回掉
+						// console.log(stateData);
+						// console.log(obj.id);
+						for(k in stateData){
+							if (k==obj.id) {//点击地图上的省份的时候，打开相应省份的列表
+								window.open(stateData[k].url);
+							}
+						}
+					}
 				});
-			}, function () {
-				var thisName = $(this).attr('name');
+				$('#MapControl li').hover(function () {//鼠标hover事件
+					var thisName = $(this).attr('name');
 
-				$('#StateTip').remove();
-				$('#MapControl li').removeClass('select');
-				mapObj_1[$(this).attr('name')].attr({
-					fill: "#" + stateColorList[data[$(this).attr('name')].stateInitColor]
+					var thisHtml = $(this).html();
+					$('#MapControl li').removeClass('select');
+					$(this).addClass('select');
+					$(document.body).append('<div id="StateTip"></div');
+					$('#StateTip').css({
+						left: $(mapObj_1[thisName].node).offset().left - 50,
+						top: $(mapObj_1[thisName].node).offset().top - 40
+					}).html(thisHtml).show();
+					mapObj_1[thisName].attr({
+						fill: '#E99A4D'
+					});
+				}, function () {
+					var thisName = $(this).attr('name');
+
+					$('#StateTip').remove();
+					$('#MapControl li').removeClass('select');
+					mapObj_1[$(this).attr('name')].attr({
+						fill: "#" + stateColorList[data[$(this).attr('name')].stateInitColor]
+					});
 				});
+
+				$('#MapColor').show();
+
+
 			});
-
-			$('#MapColor').show();
-
-
-		});
 	</script>
 </head>
 <body>
@@ -331,7 +331,7 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 					</div>
 					<div class="list-page-num f-l-l">
 						<h2 class="f-l-l">销售网络&gt;</h2>
-						<h3 class="f-l-l">全球代理商</h3>
+						<h3 class="f-l-l">中国代理商</h3>
 					</div>
 				</div>
 				<!-- 左侧菜单开始···················································· -->
@@ -342,6 +342,7 @@ $bclassid=$GLOBALS[navclassid]; //取得本栏目id
 					<!-- 搜索框开始················································ -->
 					<div class="search-warp clearfix">
 						<form action="">
+
 							<div class="form-group f-l-l">
 								<label class="sr-only" for="search-con">输入各地琴行</label>
 								<input class="form-control f-l-l" id="search-con " type="text" placeholder="输入搜索内容">

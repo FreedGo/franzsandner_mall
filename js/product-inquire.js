@@ -4,12 +4,13 @@ $(function() {
 		loader = $('.loaders');
 		fa.click(function(event) {
 			var fb = $('#search-con').val();
+			$('.inquire-output').show();
 			loader.show();
 			$.ajax({
 				url: '/e/zjk/zhengpin.ajax.php',
 				type: 'post',
 				dataType: 'text',
-				data: {'title': fb},
+				data: {'title': fb}
 			})
 			.done(function(msg) {
 				loader.hide();

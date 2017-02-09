@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<?php
+$bclassid=$GLOBALS[navclassid]; //取得本栏目id
+?>
+	[e:loop={"select * from [!db.pre!]enewsclass where classid = '$bclassid' order by classid",0,24,0}]
+	<title><?=$bqr[bname]?>_<?=$public_r['add_sitename']?></title>
+	<meta name="keywords" content="<?=$bqr[classpagekey]?>" />
+	<meta name="description" content="<?=$bqr[intro]?>" />
+	[/e:loop]
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/css/contact-us.css">
+	<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=iC7vd85WjGWnSgBFRBMOuZ7atogsTAKY"></script>
+</head>
+<body>
+[!--temp.header--]
+<section class="contact-us-warp">
+	<h1>联系我们</h1>
+	<div class="contact-us-address de">
+		<h2>德国公司</h2>
+		<div class="address-de">
+			<div id="allmap1">
+				<img src="/images/de.jpg" alt="">
+				<div class="de-factory clearfix">
+					<h2 class="f-l-l">德国法兰山德工厂</h2>
+					<img class="f-l-l" src="/images/gongchangde.jpg" alt="">
+					<p>Mr. Franz Sandner — 一个来自德国 Schnbach （森巴赫）的乐器生产家族,著名的品牌有 : Franz Sandner全系列乐器产品;SCHREIBER、KEILWERTH管乐；August Forster福斯特钢琴；WINTER、PUCHNER、 LAUSMANN、KLIER乐器配件。
+						二战之后因为德国与捷克的边境重划,大部分的成员将工厂搬迁至法兰克福近郊的Nauheim（瑙海姆)镇继续着他们优良的乐器制作工艺。</p>
+					<!-- <div class="sanjiao"></div> -->
+				</div>
+			</div>
+		</div>
+		<ul class="list-group">
+			<li class="list-group-item">地址：Rheinstrasse 4D-64569 Nauheim Germany</li>
+			<li class="list-group-item">电话：49-6152-6750</li>
+			<li class="list-group-item">传真：49-6152-61394</li>
+			<li class="list-group-item">E-mail： Franz-Sandner@t-online.de</li>
+		</ul>
+	</div>
+	<div class="contact-us-address cn">
+		<h2>上海公司（总部）</h2>
+		<div class="address-de">
+			<!-- <div id="allmap2"></div> -->
+			<div id="allmap1">
+				<img src="/images/falansh.jpg" alt="">
+				<div class="de-factory clearfix">
+					<h2 class="f-l-l">法兰山德上海工厂</h2>
+					<img class="f-l-l" src="/images/falan.jpg" alt="">
+					<p>1980年代年轻的第三代Dietmar Schuh进入公司,成功的将产品推向全世界60多个国家,大幅提升了法兰山德的世界知名度,2002年成功在中国设立自己的生产线,引引领德国精致的工 艺进入中国市场,並得到广大音乐群众的喜爱,欢迎您来体验这来自于德国的完美音色。</p>
+					<!-- <div class="sanjiao"></div> -->
+				</div>
+			</div>
+		</div>
+		<ul class="list-group">
+			<li class="list-group-item">地址：上海市金山区钱明东路1388弄35号</li>
+			<li class="list-group-item">电话：400-6962-818</li>
+			<li class="list-group-item">传真：86-21-54170590</li>
+			<li class="list-group-item">E-mail: (中国市场部) sqq@franzsandner.com</li>
+			<li class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(国际贸易部)export@franzsandner.com</li>
+			<li class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(客服部） service-china@franzsandner.com</li>
+
+		</ul>
+	</div>
+	<div class="contact-us-address tw">
+		<h2>台湾公司</h2>
+		<div class="address-de">
+			<div id="allmap3"></div>
+		</div>
+		<ul class="list-group">
+			<li class="list-group-item">地址：新竹市四维路80号</li>
+			<li class="list-group-item">电话：886-3-524-8080</li>
+			<li class="list-group-item">传真：886-3-526-0225</li>
+			<li class="list-group-item">E-mail: (客服部) service@franzsandner.com</li>
+			<li class="list-group-item">(批发部) tomy@franzsandner.com</li>
+		</ul>
+	</div>
+</section>
+[!--temp.footer--]
+</body>
+</html>
+<script type="text/javascript">
+	// // 百度地图API功能
+	// var sContent1 =
+	// "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>天安门</h4>" +
+	// "<img style='float:right;margin:4px' id='imgDemo1' src='/images/falan.jpg' width='139' height='104' title='天安门'/>" +
+	// "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>天安门坐落在中国北京市中心,故宫的南侧,与天安门广场隔长安街相望,是清朝皇城的大门...</p>" +
+	// "</div>";
+	// var map1 = new BMap.Map("allmap1");
+	// var point1 = new BMap.Point(49.9413361, 8.4467076);
+	// var marker1 = new BMap.Marker(point1);
+	// var infoWindow1 = new BMap.InfoWindow(sContent1);  // 创建信息窗口对象
+	// map1.centerAndZoom(point1, 15);
+	// map1.addOverlay(marker1);
+	// map1.enableScrollWheelZoom();
+	// marker1.addEventListener("click", function(){
+	//    this.openInfoWindow(infoWindow1);
+	//    //图片加载完毕重绘infowindow
+	//    document.getElementById('imgDemo1').onload = function (){
+	// 	   infoWindow1.redraw();   //防止在网速较慢，图片未加载时，生成的信息框高度比图片的总高度小，导致图片部分被隐藏
+	//    }
+	// });
+
+	// 百度地图API2功能
+	var sContent2 =
+		    "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>法兰山德上海总部</h4>" +
+		    "<img style='float:right;margin:4px' id='imgDemo2' src='/images/falan.jpg' width='139' height='104' title='法兰山德'/>" +
+		    "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>1980年代年轻的第三代Dietmar Schuh进入公司,成功的将产品推向全世界60多个国家,大幅提升了法兰山德的世界知名度,2002年成功在中国设立自己的生产线,引引领德国精致的工 艺进入中国市场,並得到广大音乐群众的喜爱,欢迎您来体验这来自于德国的完美音色。</p>" +
+		    "</div>";
+	var map2 = new BMap.Map("allmap2");
+	var point2 = new BMap.Point(121.054,30.890);
+	var marker2 = new BMap.Marker(point2);
+	var infoWindow2= new BMap.InfoWindow(sContent2);  // 创建信息窗口对象
+	map2.centerAndZoom(point2, 15);
+	map2.addOverlay(marker2);
+	map2.enableScrollWheelZoom();
+	marker2.addEventListener("click", function(){
+		this.openInfoWindow(infoWindow2);
+		//图片加载完毕重绘infowindow
+		document.getElementById('imgDemo2').onload = function (){
+			infoWindow2.redraw();   //防止在网速较慢，图片未加载时，生成的信息框高度比图片的总高度小，导致图片部分被隐藏
+		}
+	});
+	// 百度地图API3功能
+	var sContent3 =
+		    "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>法兰山德台湾公司</h4>" +
+		    "<img style='float:right;margin:4px' id='imgDemo3' src='/images/falan.jpg' width='139' height='104' title='法兰山德'/>" +
+		    "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>1980年代年轻的第三代Dietmar Schuh进入公司,成功的将产品推向全世界60多个国家,大幅提升了法兰山德的世界知名度,2002年成功在中国设立自己的生产线,引引领德国精致的工 艺进入中国市场,並得到广大音乐群众的喜爱,欢迎您来体验这来自于德国的完美音色。</p>" +
+		    "</div>";
+	var map3 = new BMap.Map("allmap3");
+	var point3 = new BMap.Point(121.518,25.044);
+	var marker3 = new BMap.Marker(point3);
+	var infoWindow3= new BMap.InfoWindow(sContent3);  // 创建信息窗口对象
+	map3.centerAndZoom(point3, 15);
+	map3.addOverlay(marker3);
+	map3.enableScrollWheelZoom();
+	marker3.addEventListener("click", function(){
+		this.openInfoWindow(infoWindow3);
+		//图片加载完毕重绘infowindow
+		document.getElementById('imgDemo2').onload = function (){
+			infoWindow3.redraw();   //防止在网速较慢，图片未加载时，生成的信息框高度比图片的总高度小，导致图片部分被隐藏
+		}
+	});
+</script>
+<!--<script>
+
+// This example displays a marker at the center of Australia.
+// When the user clicks the marker, an info window opens.
+//谷歌地图api
+function initMap() {
+  var uluru = {lat: 49.945,lng: 8.417};
+  var map = new google.maps.Map(document.getElementById('allmap1'), {
+    zoom: 4,
+    center: uluru
+  });
+
+  var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">德国法兰山德工厂</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>Mr. Franz Sandner</b>,  一个来自德国 <b>Schnbach （森巴赫）</b>' +
+      '的乐器生产家族,著名的品牌有 : '+
+      'Franz Sandner全系列乐器产品;SCHREIBER、KEILWERTH管乐； '+
+      'August Forster福斯特钢琴；WINTER、PUCHNER、 LAUSMANN、KLIER乐器配件。  '+
+      '二战之后因为德国与捷克的边境重划，大部分的成员将工厂搬迁至法兰克福近郊 '+
+      '的Nauheim（瑙海姆)镇继续着他们优良的乐器制作工艺。 '+
+      '</p>'+
+      '<p>德国官网, <a href="http://www.august-foerster.de/">'+
+      'http://www.august-foerster.de/</a> '+
+      '</p>'+
+      '</div>'+
+      '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+    title: 'Uluru (Ayers Rock)'
+  });
+  marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+}
+
+</script>
+<script async defer
+        src="https://ditu.google.cn/maps/api/js?key=AIzaSyDAG49bHoESJl6vzTuk3tWZLhr5Pb4SmqA&signed_in=true&callback=initMap"></script>-->
