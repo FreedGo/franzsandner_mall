@@ -13,11 +13,12 @@
 	<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script src="/js/xin-list.js"></script>
 	<script>
-		$(function () {
-			//	0.页面加载首先获取热门钢琴
-			chaxunremen('11,16,17,18,21,22,23,24,25,59');
-		})
+			$(function () {
+				//	0.页面加载首先获取热门钢琴
+				chaxunremen('11,16,17,18,21,22,23,24,25,59');
+			})
 	</script>
+
 </head>
 <body>
 <!-- 头部··························································· -->
@@ -64,7 +65,6 @@
 		<div class="all-list clearfix">
 			<!-- 列表左侧分类········································ -->
 			<div class="all-list-left f-l-l">
-
 				<div class="list-group-warp">
 					<div class="list-group-item all-list-left-title"><a onclick="chaxunremen('11,16,17,18,21,22,23,24,25,59')">热门钢琴</a></div>
 				</div>
@@ -79,14 +79,13 @@
 					</dl>
 				</div>
 				<div class="list-group-warp">
-					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(18,$(this))">法兰山德德国进口钢琴</a></div>
-				</div>
-				<div class="list-group-warp">
 					<div class="list-group-item all-list-left-title">
 						<a onclick="chaxunone(,$(this).html())">法兰山德立式钢琴</a>
 						<span class="sanjiao"></span>
 					</div>
 					<dl class="all-list-left-type type1 list-group" style="display: none">
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(18,$(this))">德国进口系列</a></dt>
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(69,$(this))">UP系列</a></dt>
 						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(21,$(this))">SP系列</a></dt>
 						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(22,$(this))">FS系列</a></dt>
 						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(59,$(this))">其它系列</a></dt>
@@ -118,30 +117,6 @@
 						<dt class="list-group-item all-list-left-con"><a onclick="chaxunthree(54,$(this))">钢琴的保养</a></dt>
 					</dl>
 				</div>
-				<!--<dl class="all-list-left-type type2 list-group">-->
-				<!--<dd class=" list-group-item all-list-left-title "><a onclick="chaxuntwo(18,$(this).html())">法兰山德德国进口钢琴</a></dd>-->
-				<!--</dl>-->
-				<!--<dl class="all-list-left-type type3 list-group">-->
-				<!--<dd class="list-group-item all-list-left-title"><a onclick="chaxunone(3,$(this).html())">法兰山德立式钢琴</a></dd>-->
-				<!--<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(21,$(this).html())">SP系列</a></dt>-->
-				<!--<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(22,$(this).html())">FS系列</a></dt>-->
-				<!--<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(59,$(this).html())">其它系列</a></dt>-->
-				<!--</dl>-->
-				<!--<dl class="all-list-left-type type4 list-group">-->
-				<!--<dd class=" list-group-item all-list-left-title"><a onclick="chaxunone(4,$(this).html())">法兰山德三角钢琴</a></dd>-->
-				<!--<dt class=" list-group-item all-list-left-con"><a onclick="chaxuntwo(23,$(this).html())">沙龙演奏琴</a></dt>-->
-				<!--<dt class=" list-group-item all-list-left-con"><a onclick="chaxuntwo(24,$(this).html())">专业演奏琴</a></dt>-->
-				<!--<dt class=" list-group-item all-list-left-con"><a onclick="chaxuntwo(25,$(this).html())">音乐厅用琴</a></dt>-->
-				<!--</dl>-->
-				<!--<dl class="all-list-left-type type5 list-group">-->
-				<!--<dd class="list-group-item all-list-left-title"><a onclick="chaxuntwo(11,$(this).html())">法兰山德电钢琴</a></dd>-->
-				<!--</dl>-->
-				<!--<dl class="all-list-left-type type6 list-group">-->
-				<!--<dd class="list-group-item all-list-left-title"><a>钢琴专业技术</a></dd>-->
-				<!--<dt class="list-group-item all-list-left-con"><a onclick="chaxunthree(52,$(this).html())">钢琴历史</a></dt>-->
-				<!--<dt class="list-group-item all-list-left-con"><a onclick="chaxunthree(53,$(this).html())">钢琴制造秘密</a></dt>-->
-				<!--<dt class="list-group-item all-list-left-con"><a onclick="chaxunthree(54,$(this).html())">钢琴的保养</a></dt>-->
-				<!--</dl>-->
 			</div>
 			<!-- 左侧种类列表结束··············································· -->
 			<!-- 右侧详细列表··················································· -->
