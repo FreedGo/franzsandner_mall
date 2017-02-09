@@ -13,10 +13,10 @@
 	<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script src="/js/xin-list.js"></script>
 	<script>
-		$(function () {
-			//	0.页面加载首先获取热门钢琴
-			chaxunremen('46');
-		})
+			$(function () {
+				//	0.页面加载首先获取热门钢琴
+				chaxunremen('46');
+			})
 	</script>
 </head>
 <body>
@@ -68,7 +68,25 @@
 					<div class="list-group-item all-list-left-title"><a onclick="chaxunremen('46')">热门配件</a></div>
 				</div>
 				<div class="list-group-warp">
-					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(46,$(this))">配件</a></div>
+					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(62,$(this))">钢琴配件</a></div>
+				</div>
+				<div class="list-group-warp">
+					<div class="list-group-item all-list-left-title">
+						<a>提琴配件</a>
+						<span class="sanjiao"></span>
+					</div>
+					<dl class="all-list-left-type type1 list-group" style="display: none">
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(65,$(this))">琴弓</a></dt>
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(66,$(this))">琴盒</a></dt>
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(67,$(this))">琴弦</a></dt>
+						<dt class="list-group-item all-list-left-con"><a onclick="chaxuntwo(68,$(this))">松香</a></dt>
+					</dl>
+				</div>
+				<div class="list-group-warp">
+					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(63,$(this))">吉他配件</a></div>
+				</div>
+				<div class="list-group-warp">
+					<div class="list-group-item all-list-left-title"><a onclick="chaxuntwo(46,$(this))">其他配件</a></div>
 				</div>
 			</div>
 			<!-- 左侧种类列表结束··············································· -->
