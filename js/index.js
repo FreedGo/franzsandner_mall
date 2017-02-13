@@ -5,58 +5,6 @@
 * @Last Modified by:   Freed
 * @Last Modified time: 2016-05-22 16:08:25
 */
-// $(function() {
-// // 1.0 首页nav子菜单显示与隐藏	
-// 	var m2 = $('#m2'),
-// 		m3 = $('#m3'),
-// 		m4 = $('#m4'),
-// 		m2Son = $('#m2-son'),
-// 		m3Son = $('#m3-son'),
-// 		m4Son = $('#m4-son'),
-// 		mSonWarp = $('.head-nav-main'),
-// 		timer1;
-// 		// 1.0.1
-// 		m2.hover(function() {
-// 			mSonWarp.stop(true).slideDown(400);
-// 			m2Son.stop(true).show().siblings('.sub').hide();
-// 		}, function() {
-// 			mSonWarp.stop(true).slideUp(400);
-// 		});
-// 		m2Son.hover(function() {
-// 			mSonWarp.stop();
-// 		}, function() {
-// 			mSonWarp.stop(true).slideUp(400);
-// 		});
-// 		// 1.0.2
-// 		m3.hover(function() {
-// 			mSonWarp.stop(true).slideDown(400);
-// 			m3Son.stop(true).show().siblings('.sub').hide();
-// 		}, function() {
-// 			mSonWarp.stop(true).slideUp(400);
-// 		});
-// 		m3Son.hover(function() {
-// 			mSonWarp.stop();
-// 		}, function() {
-// 			mSonWarp.stop(true).slideUp(400);
-// 		});
-			
-// 		// 1.0.3
-// 		m4.hover(function() {
-// 			mSonWarp.stop(true).slideDown(400);
-// 			m4Son.stop(true).show().siblings('.sub').hide();
-// 		}, function() {
-// 			mSonWarp.stop(true).slideUp(400);
-// 		});
-// 		m4Son.hover(function() {
-// 			mSonWarp.stop();
-// 		}, function() {
-// 			mSonWarp.stop(true).slideUp(400);
-// 		});
-
-// 		// 1.1首页的fullpage参数配置
-
-// });
-
 
 $(function(){
 	$('#dowebok').fullpage({
@@ -118,7 +66,39 @@ $(function(){
 	setInterval(function(){
         $.fn.fullpage.moveSlideRight();
     }, 6000);
-//	$.fn.fullpage.destroy();
-//	$.fn.fullpage.setAllowScrolling(false);
-//	$.fn.fullpage.setKeyboardScrolling(false);
+
+	/**
+	 * 页面加载的时候,1.三级联动加载到地区,2.按排序加载琴行
+	 */
+	function getCurrentCity(){
+		var subCity1,//省
+		    subCity2;//市
+		// 第一步,向高德API发送请求并获得访问者所在省份
+		$.ajax({
+			type: "get",
+			//url: "http://webapi.amap.com/maps/ipLocation?key=4a84cf8078fb847fd4072da2dbc9b6b7",//自己申请的高德key，2000次每天
+			url:'http://restapi.amap.com/v3/ip?key=7a178998b6550b21f6a2fb88d3285fcd',
+			dataType: 'text',
+			// contentType:'application/x-www-form-urlencoded;charset=UTF-8',
+			success: function(data) {
+				//转换为JSON对象
+				var jsonObj = eval("(" + data.replace('(','').replace(')','').replace(';','') + ")");
+				//当前城市
+				// $("#shenfen>p").html('当前:'+jsonObj.province);
+				console.log(jsonObj);
+				subCity1=jsonObj.province;
+				subCity2 = jsonObj.city;
+				// 第二步，向好琴声后台发送当前地址并接受返回的信息
+				$.ajax({
+					url: '/jiaoshi/index-ajax/index.ajax.php',
+					type: 'post',
+					data:{'addres': subCity2},
+					success:function(msg) {
+					}
+				});
+			}
+		});
+		getCurrentCity();
+		// 自定义函数结束
+	}
 });
