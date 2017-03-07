@@ -42,7 +42,7 @@ include_once 'header_1.php';
 					</div>
 					<div class="list-page-num f-l-l">
 						<h2 class="f-l-l">销售网络&gt;</h2>
-						<h3 class="f-l-l">全球代理商&gt;</h3>
+						<h3 class="f-l-l">中国代理商&gt;</h3>
 						<h3 class="f-l-l"><?= $china ?></h3>
 					</div>
 				</div>
