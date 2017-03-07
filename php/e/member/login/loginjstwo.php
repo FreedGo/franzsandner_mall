@@ -57,7 +57,7 @@ if($myuserid)
 if($mhavelogin==1)
 {
 ?>
-document.write("<button type=\"button\" class=\"btn btn-link f-l-r click-login\"><a href=\"/e/member/doaction.php?enews=exit&ecmsfrom=9\" onclick=\"return confirm(\'确认要退出?\');\">退出登录</a></button><button type=\"button\" class=\"btn btn-link f-l-r click-login\"><a href=\"/e/member/cp/\">个人中心</a></button><button type=\"button\" class=\"btn btn-link f-l-r gogo-reg\"><a href=\"/e/member/cp/\"><?=$myusername?></a></button>");
+document.write("<button type=\"button\" class=\"btn btn-link f-l-r click-out\"><a href=\"/e/member/doaction.php?enews=exit&ecmsfrom=9\" alt=\"退出登录\" onclick=\"return confirm(\'确认要退出?\');\">&nbsp;&nbsp;</a></button><button type=\"button\" class=\"btn btn-link f-l-r click-login\"><a href=\"/e/member/cp/\" alt=\"个人中心\">&nbsp;&nbsp;</a></button><button type=\"button\" class=\"btn btn-link f-l-r gogo-reg\"><a href=\"/e/member/cp/\"><?=$myusername?></a></button>");
 <?
 }
 else

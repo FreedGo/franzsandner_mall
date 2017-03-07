@@ -181,9 +181,23 @@ body{
 	margin-left:10px;
 	color: rgba(255,255,255,0);
 }
+.head-nav-logo .click-out{
+	background: url("/images/icon/new_icons.png") -32px -33px no-repeat ;
+	display: inline-block;
+	width:32px;
+	height: 32px;
+	padding: 0;
+	margin-left:10px;
+	color: rgba(255,255,255,0);
+}
 .head-nav-logo .click-login:hover{
 	color: rgba(255,255,255,0);
 
+}
+.head-nav-logo .click-out a,.head-nav-logo .click-login a{
+	display: inline-block;
+	width:32px;
+	height:32px;
 }
 .head-nav-logo .gogo-reg{
 	display: none;
